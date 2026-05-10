@@ -21,7 +21,7 @@ pipeline {
 
         stage('Run Jar') {
             steps {
-               sh 'java -jar target/mvnsel-1.0-SNAPSHOT.jar'
+               sh 'java -jar target/MyMavenSeleniumApp01-1.0-SNAPSHOT.jar'
             }
         }
     }
