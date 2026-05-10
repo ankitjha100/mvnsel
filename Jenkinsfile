@@ -15,13 +15,13 @@ pipeline {
 
         stage('Build') {
             steps {
-                bat 'mvn clean package'
+                sh 'mvn clean package'
             }
         }
 
         stage('Run Jar') {
             steps {
-                bat 'java -jar target/mvnsel-1.0-SNAPSHOT.jar'
+               sh 'java -jar target/mvnsel-1.0-SNAPSHOT.jar'
             }
         }
     }
