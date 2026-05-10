@@ -3,7 +3,7 @@ agent any
 stages {
 stage('Clone') {
 steps {
-git 'https://github.com/ankitjha100/mvnsel.git'
+git branch: 'main', url: 'https://github.com/ankitjha100/mvnsel.git'
 }
 }
 stage('Build') {
